@@ -1,0 +1,107 @@
+/*
+Custom pages
+==============================================
+Defines the layout for the custom pages.
+
+The styling defines the basic layout of the Shopware 5 custom pages that can be created and customized for multiple purposes.
+*/
+
+.farbblock {
+    .unitize-padding(5, 5, 5, 10);
+}
+
+.farbblock a {
+        color: white;
+    text-decoration: underline;
+}
+
+.farbblock ul {
+    list-style-type: none;
+}
+
+.farbblock li {
+    line-height: 1.5rem;
+}
+
+.custom-page--content {
+    .unitize(margin-top, 10);
+
+
+    .custom-page--tab-headline {
+        .unitize(margin-top, 0);
+        .unitize(font-size, 24);
+    }
+
+    .content--custom.panel--body {
+        .unitize(padding, 20);
+    }
+
+    .is--active-parent {
+        display: block;
+    }
+}
+
+.ajax-modal--custom {
+    .unitize-padding(8, 8);
+}
+
+
+@media screen and (min-width: @phoneLandscapeViewportWidth) {    
+
+    .phoneLs_links {float:left;}
+    .phoneLs_rechts {float:right;}
+    .phoneLs_linksRand {.unitize(margin-left, 222);
+    }
+    .farbblock {
+    .unitize-padding(40, 40, 40, 40);
+    } 
+    img.phoneLs_rechts {
+    .unitize-padding(0, 0, 0, 12);
+    }
+    
+.s10 { width: 10%; }
+.s20 { width: 20%; }
+.s30 { width: 30%; }
+.s33 { width: 33.3333333333333333333333333333333333333333%; }
+.s40 { width: 40%; }
+.s50 { width: 50%; }  
+.s60 { width: 60%; }
+.s70 { width: 70%; }
+.s80 { width: 80%; }
+.s90 { width: 90%; } 
+    
+}
+
+@media screen and (min-width: @tabletViewportWidth) {
+    .custom-page--content {
+        .unitize(margin-top, 30);
+
+        .custom-page--tab-headline {
+            .unitize(margin-top, 10);
+        }
+    }
+
+    .ajax-modal--custom {
+        .unitize-padding(10, 10);
+    } 
+    
+    
+}
+
+@media screen and (min-width: @tabletLandscapeViewportWidth) {
+
+   
+}
+
+
+
+@media screen and (min-width: @desktopViewportWidth) {
+
+    .ajax-modal--custom {
+        .unitize-padding(20, 20);
+    }
+
+    .custom-page--content {
+        .unitize(margin-top, 45);
+    }  
+}

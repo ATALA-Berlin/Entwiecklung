@@ -1,0 +1,225 @@
+
+.navigation-main {
+
+}
+
+.navigation-main-scrolled {
+  position: fixed;
+z-index: 999999;
+width: 100%;
+top: 0px;
+
+}
+
+.shop--navigation {
+}
+
+/* Tabletts */
+
+	.shop--navigation-scrolled {
+background: #fff;
+  position: fixed;
+z-index: 999999;
+width: 100%;
+top: 0px;
+
+
+}
+.imgstaticsite {
+    width: 100%;
+    height: auto;
+}
+
+
+
+#detail_menu{padding:0;margin:0 0 16px;list-style:none;width:100%;}
+#detail_menu li{width:100%}#detail_menu a{border-bottom:1px dotted #d4d4d4;display:block;word-wrap:break-word;color:#59585a;padding:8px;text-align:center;width:100%;position:relative}
+
+#detail_menu a:before{font-family:font-awesome;}
+#detail_menu a:hover{background:#eee;}
+
+
+.shop--navigation .navigation--entry .icon--pencil{
+    font-size: 25px;
+
+    vertical-align: middle;
+}
+
+.product--details .product--base-info .entry--label {
+    margin: 0px 8px 0px 0px;
+    margin: 0rem .5rem 0rem 0rem;
+    width: 50%;
+    display: inline-block;
+}
+
+.product--details .action--link {
+    margin: 0px 0px 0px 0px; 
+    margin: 0rem 0rem 0rem 0rem; 
+
+
+}
+.product--details .product--actions{
+	 border-bottom: none;
+}
+
+.configurator--variant .option--input:checked ~ label {
+    color: #59585a;
+    border-color: #da0830;
+}
+
+.is--ctl-checkout.is--minimal-header .header-main, .is--ctl-register.is--minimal-header .header-main, .is--ctl-register.is--minimal-header.is--target-checkout .header-main {
+    border-bottom: 2px solid #da0830;
+}
+
+.product--box .product--price {
+    text-align: right;
+}
+
+
+
+.clear{
+    clear:both;
+}
+
+.emotion--banner-slider .banner-slider--container, .emotion--banner-slider .banner-slider--slide{
+/***koment Wegen Sina Einkaufswelt***/
+    xmargin-top:-20px;
+    xmargin-bottom:0px;
+    xmargin-top:-10px;
+}
+.emotion--banner-slider{
+xmargin-bottom: 20px;
+xpadding-bottom: 20px;
+}
+
+/***abweiche für mozilla**/
+header-main .top-bar .point--of--sale{
+    float:left;
+border: 1px solid #999;
+width: 100%;
+}
+
+/*** Rahmen für Mainslider ***/
+
+.hat--rahmen .emotion--digital-publishing-slider {
+    
+    padding: 0 3.5%;
+    
+}
+
+
+
+.img banner--link:hover{
+
+opacity:0.5;
+ 
+-webkit-transform: scale(.99, .99);
+-moz-transform: scale(.99, .99);
+-ms-transform: scale(.99, .99);
+-o-transform: scale(.99, .99);
+transform: scale(.99, .99);
+
+ -moz-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -o-transition:all 0.2s ease-in;
+    transition: all 0.2s ease-in; 
+    background-color:#fff;
+
+}
+
+.banner--content-hover img:hover{
+
+opacity:0.5!important;
+  
+-webkit-transform: scale(.99, .99)!important;
+-moz-transform: scale(.99, .99)!important;
+-ms-transform: scale(.99, .99)!important;
+-o-transform: scale(.99, .99)!important;
+transform: scale(.99, .99)!important;
+
+ -moz-transition: all 0.2s ease-in !important;
+    -webkit-transition: all 0.2s ease-in!important;
+    -o-transition:all 0.2s ease-in!important;
+    transition: all 0.2s ease-in!important; 
+
+};
+
+
+.emotion--element.hover:hover{
+
+
+opacity:0.5!important;
+    border:2px solid #ffffff!important;
+-webkit-transform: scale(.99, .99)!important;
+-moz-transform: scale(.99, .99)!important;
+-ms-transform: scale(.99, .99)!important;
+-o-transform: scale(.99, .99)!important;
+transform: scale(.99, .99)!important;
+
+ -moz-transition: all 0.2s ease-in !important;
+    -webkit-transition: all 0.2s ease-in!important;
+    -o-transition:all 0.2s ease-in!important;
+    transition: all 0.2s ease-in!important; 
+   border: none!important;
+};
+
+.emotion--element.product--box .product--image.image--media:hover
+{
+
+border:1px solid #ffffff!important;
+};
+
+.product--box .product--image .image--element img:hover{
+ border:1px solid #ffffff!important;  
+};
+
+
+.dig-pub--button .is--secondary {
+
+        background-color: #d40032!important;
+        background-image: none!important;
+};
+
+
+.emotion--banner{
+border:1px solid #ffffff!important;
+};
+
+
+.emotion--banner:hover{
+ 
+
+ border:1px solid #ffffff!important;
+
+}
+
+
+img.banner-slider--image{
+
+    max-width:100%;
+}
+
+.emotion--banner-slider .banner-slider--image {
+
+        max-width:100%!important;
+    max-height: 100%;
+    height: auto!important;
+    
+}
+
+.banner-slider--banner img{
+ width: auto;
+ max-width:100%!important ;
+ overflow:auto;
+}
+
+*img{
+
+    max-width:100%!important;
+}
+
+.banner-slider--banner{
+
+
+    max-width:100%!important;
+}

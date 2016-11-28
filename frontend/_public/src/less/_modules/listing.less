@@ -1,0 +1,34 @@
+/*
+Listing
+==========================================
+Contains the styles of the product listing and its components.
+*/
+
+/*********** läßt Rahmen der Produkt-Boxen in Kategorie-Ansicht zusammenfallen **********/
+.listing {
+	margin: 0 0 1px 1px;
+	padding: 0 0 2% 0;
+}
+
+/*********** entfernt Rahmen und Hintergrund-Farbe im Produkt-Filter / Abstände verringern **********/
+    .listing--actions {
+        .unitize-margin(0, 0, 12.8, 0);
+        .unitize(padding-top, 10);
+        border: 0 none;
+        background: transparent;
+
+        .listing--paging {
+            .unitize-padding(10, 10);
+            display: block;
+            border-top: 1px solid @border-color;
+        }
+    }
+
+    // Desktop view
+/*********** Abstände verringern **********/
+@media screen and(min-width: @desktopViewportWidth) {
+
+    .listing--content {
+        .unitize(padding-top, 11.2);
+    }
+}

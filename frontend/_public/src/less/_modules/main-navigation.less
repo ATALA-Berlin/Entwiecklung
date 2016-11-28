@@ -1,0 +1,63 @@
+/*
+Main navigation
+==========================================
+Contains the styles of the main navigation of the Shopware storefront.
+
+The main navigation is positioned above the content section.
+
+It contains the viewport specific styles inside media queries.
+*/
+
+@media screen and (min-width: @tabletViewportWidth) {
+	.navigation-main {
+/*********** Trennstrich unter Hauptnavigation Farbe: ATALA rot **********/
+        border-bottom: 1px solid @highlight-error;
+
+		.navigation--link {
+
+/*********** optional Menüpunkte in Großbuchstaben **********/
+//            text-transform: uppercase;
+            
+/*********** abgerundete Ecken in Hauptnavigation entfernen **********/
+ 			.border-radius-multi(0, 0, 0, 0);           
+
+/*********** hover color: ATALA rot **********/
+			&:hover { color: @highlight-error; }
+		}
+
+		.is--active .navigation--link {
+            
+/*********** Transparenter Hintergrund aktive Hauptmenü-Links **********/
+				background-color: transparent;
+				background-image: -ms-linear-gradient(top, transparent, transparent);
+				background-image: linear-gradient(to bottom, transparent 0%, transparent 100%);
+            
+/*********** entfernt fetten Schriftschnitt im aktiver Link **********/
+				font-weight: 400;
+            
+/*********** Farbe aktiver Link im Hauptmenü: ATALA rot **********/
+				color: @highlight-error;
+
+/*********** hover color: ATALA rot **********/
+            &:hover { color: @highlight-error; }
+		}
+        
+        .is--trenner {
+            
+              &:before {
+                  
+				content:"";
+                  vertical-align: .25rem;
+//                  font-weight: 200;
+                  color: #d40032;
+                  .unitize-padding(0, 0, 0, 12);                    
+                  }            
+        }       
+	} 
+}
+
+//    
+//    span {
+//        padding-left: 26px;
+//    }
+//    

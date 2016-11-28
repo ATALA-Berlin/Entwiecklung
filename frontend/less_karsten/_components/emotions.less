@@ -1,0 +1,107 @@
+/*
+Emotions
+=========================================
+Contains the basic styles for the Shopware 5 shopping worlds and its elements.
+
+Shopware 5 provides 11 integrated elements inside the shopping worlds that can be chosen and modified inside the backend shopping world editor such as sliders, video elements and blog-articles.
+*/
+
+/*Änderung der Spaltenanzahl der Einkaufswelten für Mediaquery @tabletViewportWidth & @tabletLandscapeViewportWidth
+Umbenennung der Funktion „CreateColumnSizes“ in „myCreateColumnSizes“ zur Verhinderung von Infinite Loop
+*/
+
+.myCreateColumnSizes(@n, @i: 1) when (@i =< @n) {
+
+    &.emotion--mode-resize {
+        &.emotion--column-@{n} .column--@{i} {
+            width: (100% / @n * @i);
+        }
+    }
+
+    &.emotion--mode-masonry {
+        &.emotion--column-@{n} .column--@{i} {
+            width: 100%;
+        }
+    }
+
+    @media screen and(min-width: @phoneLandscapeViewportWidth) {
+        @columns: 2;
+        &.emotion--mode-masonry {
+            &.emotion--column-@{n} .column--@{i} when (@i <= @columns) {
+                width: (100% / @columns * @i);
+            }
+        }
+    }
+
+    @media screen and(min-width: @tabletViewportWidth) {
+        @columns: 4;
+        &.emotion--mode-masonry {
+            &.emotion--column-@{n} .column--@{i} when (@i <= @columns) {
+                width: (100% / @columns * @i);
+            }
+        }
+    }
+
+    @media screen and(min-width: @tabletLandscapeViewportWidth) {
+        @columns: 4;
+        &.emotion--mode-masonry {
+            &.emotion--column-@{n} .column--@{i} when (@i <= @columns) {
+                width: (100% / @columns * @i);
+            }
+        }
+    }
+
+    @media screen and(min-width: @desktopViewportWidth) {
+        &.emotion--mode-masonry {
+            &.emotion--column-@{n} .column--@{i} {
+                width: (100% / @n * @i);
+            }
+        }
+    }
+
+    .myCreateColumnSizes(@n, (@i + 1));
+}
+
+    // Emotion container
+.emotion--container {
+    .clearfix();
+    display: block;
+    position: relative;
+    top: 0; left: 0;
+    background: #fff;
+
+    &.emotion--mode-resize {
+        .transform-origin(0, 0, 0);
+    }
+
+    // Create the width based on the number of columns the item uses.
+    .myCreateColumnSizes(1); // Container with one column
+    .myCreateColumnSizes(2); // Container with two columns
+    .myCreateColumnSizes(3); // Container with three columns
+    .myCreateColumnSizes(4); // Container with four columns
+    .myCreateColumnSizes(5); // Container with five columns
+    .myCreateColumnSizes(6); // Container with six columns
+    .myCreateColumnSizes(7); // Container with seven columns
+    .myCreateColumnSizes(8); // Container with eight columns
+    .myCreateColumnSizes(9); // Container with nine columns
+    .myCreateColumnSizes(10); // Container with ten columns
+    .myCreateColumnSizes(11); // Container with eleven columns
+    .myCreateColumnSizes(12); // Container with twelve columns
+}
+
+    // Banner-Slider element
+.emotion--banner-slider {
+    .banner-slider--title {
+        color: @text-color-dark;
+        font-weight: bold;
+        background: rgba(256, 256, 256, 1);
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+}
+
+    // Manufacturer element
+.emotion--manufacturer {
+    text-align: center;
+    text-transform: uppercase;
+}

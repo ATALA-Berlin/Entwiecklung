@@ -1,0 +1,104 @@
+// Advanced menu container that contains every category listing
+
+/*********** hellgrauer Hintergrund für den oberen Oberkategorie-Link **********/
+@adv-menu-header-bg: @gray-light;
+
+/*********** dunkler Text für den oberen Oberkategorie-Link_Text (helle Textfarbe @button-secondary-text-color vom Default Theme überschreiben) **********/
+@adv-menu-header-text-color: @text-color-dark;
+
+/*********** halbtransparenter, hellgrauer Hintergrund für das erweiterte Menü **********/
+@adv-menu-bg:  rgba(242,242,242,0.95);
+
+/*********** hover-color: ATALA rot **********/
+@adv-menu-link-hover-color: @highlight-error;
+
+.advanced-menu {
+    
+/*********** hellgrauer Hintergrund für den oberen Oberkategorie-Link **********/
+    background: @adv-menu-bg;
+
+    .menu--list-item-link {
+
+        &:hover {
+/*********** Transition-Effekt für Menü-Einträge ausschalten **********/
+//            .unitize-padding(5, 0, 5, 0);
+/*********** hover-color Link für Menü-Einträge: ATALA rot **********/
+            color: @adv-menu-link-hover-color;
+        }
+    }
+
+    .button-container {
+
+        background: @adv-menu-header-bg;
+
+/*********** hellgrauer Rand unter Oberkategorie Bereich **********/
+        border-bottom: 1px darken(@gray-light, 10%) solid;
+
+        .button--category {
+            .unitize-padding(20, 50);
+            .transition(padding .1s ease);
+            color: @adv-menu-header-text-color;
+            position: relative;
+
+            &:hover {
+/*********** Transition-Effekt für Oberkategorie ausschalten **********/
+//                .unitize-padding(20, 50, 20, 50);
+                
+/*********** hover-color Link Oberkategorie: ATALA rot **********/
+                color: @highlight-error;
+            }
+        }
+
+/*********** Position, Größe Close-Button-Icon **********/
+        .button--close {
+            .unitize-padding(20, 0, 20, 20);
+            .unitize(font-size, 12);
+            .unitize(-16, 16, margin-top);
+        }
+    }
+
+}
+
+//.navigation-main [title='Blog'], 
+.navigation-main .navigation--entry:last-child .navigation--link{
+    .tap-highlight-color(rgba(0, 0, 0, 0));
+    
+/*********** abgerundete Ecken in Hauptnavigation entfernen **********/
+	border-top-left-radius: 0px !important;
+	border-top-right-radius: 0px !important;
+    
+/*********** letzten und Menü-Eintrag mit einem bestimmten Namen-Attribut in der Hauptnavigation auszeichnen **********/
+        background: darken(@adv-menu-header-bg,8%); 
+        font-weight: 400 !important;
+        .is--active navigation--link {
+           color: @highlight-error !important; 
+    }
+        &:hover {color: @highlight-error !important;
+        font-weight: 400 !important;
+        background: @adv-menu-header-bg !important; 
+    }
+   }
+
+//.navigation-main .is--active [title='Blog'],
+ .navigation-main .is--active  .navigation--entry:last-child .navigation--link{
+        background: darken(@adv-menu-header-bg,1%); 
+            &:hover {
+        background: @adv-menu-header-bg !important; 
+    }
+}
+
+/*********** hover-color: ATALA rot **********/
+.navigation-main .navigation--list .navigation--entry.is--hovered {
+    .border-radius-multi(0px, 0px);
+    .tap-highlight-color(rgba(0, 0, 0, 0));
+    background: @adv-menu-header-bg;
+
+    .navigation--link {
+        background: @adv-menu-header-bg;
+        color: @adv-menu-header-text-color;
+        
+          &:hover {
+              color: @highlight-error;
+        }       
+    }
+}

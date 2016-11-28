@@ -1,0 +1,88 @@
+/*
+Product-box
+===============================
+Defines the element styles of the Shopware product boxes.
+*/
+
+    //  Product box
+/*********** läßt Rahmen der Produkt-Boxen in Kategorie-Ansicht zusammenfallen **********/
+.product--box {
+	padding: 0 0 0 0;
+    margin: 0 0 -1px -1px;
+    
+    .is--rounded {
+        border-radius: 0px;
+    }
+}
+
+/*********** Größe Produktbild über Höhe **********/
+
+.box--minimal {
+	width: 50%;
+
+	.product--image {
+		.unitize-height(200);
+	}
+}
+
+/*********** 3-spaltige Darstellung für Product Box minimal **********/
+
+@media screen and(min-width: @tabletLandscapeViewportWidth) {
+
+	.box--basic {
+		.image--top(180);
+		width: 50%;
+	}
+
+	.box--minimal {
+		width: 33.3%;
+	}
+
+	.box--image {
+		.image--top(280);
+		width: 50%;
+	}
+
+    .is--ctl-search,
+	.is--ctl-listing.is--no-sidebar {
+		.box--basic {
+			.image--left(170);
+		}
+
+		.box--minimal {
+			width: 20%;
+		}
+
+		.box--image {
+			width: 33.3%;
+		}
+	}
+}
+
+
+@media screen and(min-width: @desktopViewportWidth) {
+
+	.box--basic {
+		.image--left(170);
+
+		.box--content {
+			.unitize-padding(20, 10);
+		}
+	}
+
+	.box--minimal {
+		width: 33.33%;
+	}
+
+	.box--image {
+		.image--top(300);
+	}
+
+    .is--ctl-search,
+	.is--ctl-listing.is--no-sidebar {
+
+		.box--minimal {
+			width: 33%;
+		}
+	}
+}

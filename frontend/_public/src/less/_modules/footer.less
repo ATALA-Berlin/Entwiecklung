@@ -1,0 +1,49 @@
+/*
+Footer
+==========================================
+Defines the styles for the storefront footer and its components.
+
+Contains the footer columns, the navigation elements and the vat notice/logo at the bottom of the page.
+
+It contains the viewport specific styles inside media queries.
+
+The footer element sizes are defined with the unitize mixin.
+*/
+
+.footer-main {
+    background: transparent;
+    
+    .footer--phone-link {
+        .unitize(font-size, 19);
+        font-weight: bold;
+        color: @text-color-dark;
+    }
+    
+    .container {
+     background: transparent;       
+    }
+
+    //***** Abstand Mehrwertsteuerhinweis oben ********
+    .footer--bottom {
+        .unitize-padding(10, 12, 0, 12, 12);
+    }
+
+    //***** Stylin Copyright-Hinweis ********
+    .footer--copyright {
+        background-color: @brand-primary;
+        color: @gray;
+        text-align: center;
+        .unitize-padding(10, 0);
+        .unitize(font-size, 13);
+    }
+}
+
+@media screen and (min-width: @tabletViewportWidth) {
+
+    //***** Abstand Mehrwertsteuerhinweis unten ********
+    .footer--vat-info {
+        .vat-info--text {
+            .unitize(margin-bottom, 10);
+        }
+    }
+}

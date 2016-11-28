@@ -1,0 +1,18 @@
+/*
+Home
+==============================================
+Defines the styling of the home-page content elements.
+*/
+
+.content--home {
+//    padding: 0 7% !important;
+    .unitize(margin-top, 20);
+
+    @media screen and (min-width: @tabletViewportWidth) {
+        .unitize(margin-top, 30);
+    }
+
+    @media screen and (min-width: @desktopViewportWidth) {
+        .unitize(margin-top, 50);
+    }
+}

@@ -1,0 +1,85 @@
+
+.navigation-main {
+
+}
+
+.navigation-main-scrolled {
+  position: fixed;
+z-index: 999999;
+width: 100%;
+top: 0px;
+
+}
+
+.shop--navigation {
+}
+
+/* Tabletts */
+
+	.shop--navigation-scrolled {
+background: #fff;
+  position: fixed;
+z-index: 999999;
+width: 100%;
+top: 0px;
+
+
+}
+.imgstaticsite {
+    width: 100%;
+    height: auto;
+}
+
+
+
+#detail_menu{padding:0;margin:0 0 16px;list-style:none;width:100%;}
+#detail_menu li{width:100%}#detail_menu a{border-bottom:1px dotted #d4d4d4;display:block;word-wrap:break-word;color:#59585a;padding:8px;text-align:center;width:100%;position:relative}
+
+#detail_menu a:before{font-family:font-awesome;}
+#detail_menu a:hover{background:#eee;}
+
+
+.shop--navigation .navigation--entry .icon--pencil{
+    font-size: 25px;
+
+    vertical-align: middle;
+}
+
+.product--details .product--base-info .entry--label {
+    margin: 0px 8px 0px 0px;
+    margin: 0rem .5rem 0rem 0rem;
+    width: 50%;
+    display: inline-block;
+}
+
+.product--details .action--link {
+    margin: 0px 0px 0px 0px; 
+    margin: 0rem 0rem 0rem 0rem; 
+
+
+}
+.product--details .product--actions{
+	 border-bottom: none;
+}
+
+.configurator--variant .option--input:checked ~ label {
+    color: #59585a;
+    border-color: #da0830;
+}
+
+.is--ctl-checkout.is--minimal-header .header-main, .is--ctl-register.is--minimal-header .header-main, .is--ctl-register.is--minimal-header.is--target-checkout .header-main {
+    border-bottom: 2px solid #da0830;
+}
+
+.product--box .product--price {
+    text-align: right;
+}
+
+.emotion--banner-slider{
+    max-width:100%;
+}
+.emotion--banner-slider .banner-slider--banner{
+    max-width:100%;
+    height:auto;
+    
+}

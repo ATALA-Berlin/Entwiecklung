@@ -1,0 +1,25 @@
+/*
+Image slider element
+============================================
+Defines the styles for the image slider element that is a part of the basic Shopware 5 shopping world elements.
+
+The element can be added by using the Shopware 5 backend shopping world editor.
+
+The element contains thumbnail image previews, navigation dots and navigation arrows to change the current active image.
+
+It contains the viewport specific styles inside media queries.
+*/
+
+.image-slider--slide {
+    .clearfix();
+	.transform-style(preserve-3d);
+	.backface-visibility(hidden);
+    display: block;
+    height: 100%;
+    position: relative;
+    top: 2.625rem;
+    left: 0;
+    white-space: nowrap;
+    font-size: 0;
+    -ms-touch-action: pan-y;
+}

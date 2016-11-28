@@ -1,0 +1,52 @@
+/*
+Sidebar
+==============================================
+Defines the styling of the storefront sidebar navigation and its components.
+
+The sidebar is displayed inside the off-canvas menu on small devices.
+
+*/
+
+@media screen and (min-width: @tabletViewportWidth) {
+
+    .sidebar--navigation {
+        
+//Rahmen Sidebar-Navigation entfernen
+        border:  0;
+//        border: 1px solid @border-color;
+        .is--level1 {
+            border: 0 none;
+
+            .navigation--entry {
+                border: 0 none;
+            }
+
+        }
+        .is--level2 {
+            border: 0 none;
+
+            .navigation--entry {
+                border: 0 none;
+            }
+
+        }
+    }
+
+    .shop-sites--container {
+        .unitize-padding(15, 10);
+        .unitize(margin-bottom, 20);
+            border: none;
+            border-bottom: 0px solid transparent;
+
+        .shop-sites--headline {
+            .unitize(10 ,15, padding-bottom);
+            .unitize(font-size, 16);
+            margin-top: 0;
+            border: none;
+            border-bottom: 0px solid @border-color;
+            color: @text-color-dark;
+            font-weight: bold;
+        }
+    }
+}
+    
